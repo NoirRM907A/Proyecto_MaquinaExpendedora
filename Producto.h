@@ -16,6 +16,7 @@ protected:
 public:
     Producto();
     Producto(string = "", float = 0, int = 0);
+    ~Producto();
     string getNombre();
     virtual float getPrecio() = 0;
     int getCantidad();

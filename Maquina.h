@@ -6,17 +6,18 @@
 #define PROYECTO_MAQUINAEXPENDEDORA_MAQUINA_H
 #include "IMaquinaAdministradora.h"
 #include "IMaquinaVendedora.h"
-//#include "MonederoElectronico.h"
+#include "MonederoElectronico.h"
 
 class Maquina : public IMaquinaAdministradora, public IMaquinaVendedora{
 private:
     int identificador;
     string nombre;
     //ListaProducto
-    //MonederoElectronico* monedero;
+    MonederoElectronico* monedero;
 public:
     Maquina();
     Maquina(int = 0, string = "");
+    ~Maquina();
     void setIdentificador(int);
 
     //Metodos de IMaquinaAdministradora
