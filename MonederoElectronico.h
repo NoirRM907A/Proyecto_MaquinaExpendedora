@@ -15,14 +15,10 @@ public:
     MonederoElectronico();
     MonederoElectronico(int);
     ~MonederoElectronico();
-    int getDinero();
-    void setDinero(int);
+    int getDinero() const;
+    void setDinero(int dinero);
     string desgloceVuelto(string&);
     string toString();
-
-
-
-
 };
 
 
