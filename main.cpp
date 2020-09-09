@@ -5,6 +5,7 @@
 int main() {
     /*
     //Prueba de monedero
+     //Prueba de monedero
     int numero;
     cout << "Creando monedero electronico\nDigite la cantidad de dinero que desea en su monedero: ";
     cin>> numero;
