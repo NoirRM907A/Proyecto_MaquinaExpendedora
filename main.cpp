@@ -1,5 +1,8 @@
 #include <iostream>
+//Aca van los include para hacer pruebas
+#include "listaGenerica.h"
 #include "MonederoElectronico.h"
+
 
 
 int main() {

@@ -7,12 +7,13 @@
 #include "IMaquinaAdministradora.h"
 #include "IMaquinaVendedora.h"
 #include "MonederoElectronico.h"
+#include "listaGenerica.h"
 
 class Maquina : public IMaquinaAdministradora, public IMaquinaVendedora{
 private:
     int identificador;
     string nombre;
-    //ListaProducto
+    listaGenerica<Producto>* productos;
     MonederoElectronico* monedero;
 public:
     Maquina();
